@@ -15,11 +15,15 @@ To use this config on your machine:
 
 1. Clone the repo into your Neovim config directory:
 
-'git clone https://github.com/HumbleHumbert/nvim-v115-config.git ~/.config/nvim'
+```bash
+git clone https://github.com/HumbleHumbert/nvim-v115-config.git ~/.config/nvim'
+```
 
 2. Launch Neovim:
 
-'uv run nvim'
+```bash
+uv run nvim
+```
 
 3. Lazy.nvim will automatically install plugins on first launch. Run `:Lazy sync` if needed.
 
