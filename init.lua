@@ -1,3 +1,7 @@
+-- [[ lazy ]]
+require("config.lazy")
+
+-- [[ example init ]]
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -93,10 +97,14 @@ vim.cmd('packadd! nohlsearch')
 
 -- [[ Color ]]
 -- [[ colorscheme ]]
-vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("flexoki")
+
 -- [[ hl cursorline ]]
 vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#0a0a0a', ctermbg = 232 })
-vim.opt.cursorlineopt = "both"
 
--- [[ lazy ]]
-require("config.lazy")
+-- [[ uv run file ]]
+vim.keymap.set('n', '<F5>', ':!uv run %<CR>', { noremap = true, silent = true })
+
+-- [[ layouts ]]
+vim.opt.signcolumn = 'number'
+
